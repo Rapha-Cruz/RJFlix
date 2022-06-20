@@ -12,7 +12,7 @@
 /*elemento principal*/
 body{
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -39,11 +39,12 @@ header .container{
     justify-content: space-between;
 }
 
-/*filme principal */
+
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-BreakingBad.jpg');
-
+    
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-Principal.jpg');
+    
     height: 400px;    
     background-size: cover;
 
@@ -51,6 +52,10 @@ header .container{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.filme-principal .container{
+    width: 70%;
 }
 
 .filme-principal .descricao{
@@ -85,3 +90,24 @@ header .container{
 .botao i{
     margin-right: 8px;
 }
+
+
+
+/*Wrapper envelopar*/
+.container{
+    margin-left: 20px;
+    
+}
+
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filme{
+    margin-top: 5px;
+}
+
